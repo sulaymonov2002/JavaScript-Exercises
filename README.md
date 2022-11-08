@@ -8,4 +8,4 @@ Bu reponing asosiy maqsadi matinli masalalar 🤔 orqali logikani 🧠 kuchaytir
 
 | No. | Savollar                                                                                                                                             |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Joriy kun va vaqtni quyidagi formatda ko'rsatish uchun JavaScript dasturini yozing.`(Today is : Tuesday Current time is : 10 PM : 30 : 38)`][Exercises-1](https://github.com/sulaymonov2002/JavaScript-Exercises/tree/main/JavaScript%20basic%20-%20Exercises%2C%20Practice%2C%20Solution)                          |
+| 1   | [Joriy kun va vaqtni quyidagi formatda ko'rsatish uchun JavaScript dasturini yozing.`(Today is : Tuesday Current time is : 10 PM : 30 : 38)`][Exercises-1](https://github.com/sulaymonov2002/JavaScript-Exercises/tree/main/Exercises-1)                          |
