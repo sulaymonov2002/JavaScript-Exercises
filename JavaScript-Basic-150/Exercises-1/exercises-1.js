@@ -16,7 +16,6 @@ console.log(`Today is : ${dayList[day]}`);
 let hour = today.getHours();
 const minute = today.getMinutes();
 const second = today.getSeconds();
-
 let prepand = hour >= 12 ? " PM" : " AM";
 hour = hour >= 12 ? hour - 12 : hour;
 
@@ -29,7 +28,6 @@ if (hour === 0 && prepand === " PM") {
     prepand = " PM";
   }
 }
-
 if (hour === 0 && prepand === " AM") {
   if (minute === 0 && second === 0) {
     hour = 12;
@@ -39,5 +37,4 @@ if (hour === 0 && prepand === " AM") {
     prepand = " AM";
   }
 }
-
-console.log(`Current Time : ${hour}${prepand} : ${minute} : ${second}`);
+console.log(`Current time is : ${hour}${prepand} : ${minute} : ${second}`);
