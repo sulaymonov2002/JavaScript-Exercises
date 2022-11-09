@@ -28,7 +28,4 @@ const area = Math.sqrt(
 
 console.log(area);
 
-```README.md
-Raqamning kvadrat ildizini olish uchun [Math.sqrt()](https://www.w3resource.com/javascript/object-property-method/math-sqrt.php) funksiyasidan foydalaniladi.
- Agar raqamning qiymati manfiy bo'lsa, Math.sqrt() NaN ni qaytaradi.
-```;
+
