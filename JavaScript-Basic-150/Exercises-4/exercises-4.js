@@ -10,12 +10,10 @@
  * 
  * 
  * Heron's formula states that the area of a triangle whose sides have lengths a, b, and c is
-A = √s(sa) (sb) (s—c),
-where s is the semiperimeter of the triangle; that is,
-a+b+c 2 S =
-A (a+b+c)(-a+b+c) (a−b+c) (a+b-c)
-A = 4 /2(a2b2+ a2c2+ b²c²) (a4+ b² + c²) -
-Heron's formula can also be written as 1 1 A A = (a² + b² + c²)2-2(a² + b² + c²) √(a². 4V 4a2b2 (a²+b²- c²)2. 
+Area = Square root of√s(s - a)(s - b)(s - c)
+
+where s is half the perimeter, or (a + b + c)/2.
+
  */
 
 const side1 = 5;
