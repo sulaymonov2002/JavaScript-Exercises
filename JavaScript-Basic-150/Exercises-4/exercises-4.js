@@ -21,8 +21,14 @@ const side2 = 6;
 const side3 = 7;
 
 const perimeter = (side1 + side2 + side3) / 2;
+
 const area = Math.sqrt(
   perimeter * ((perimeter - side1) * (perimeter - side2) * (perimeter - side3))
 );
 
 console.log(area);
+
+```README.md
+Raqamning kvadrat ildizini olish uchun [Math.sqrt()](https://www.w3resource.com/javascript/object-property-method/math-sqrt.php) funksiyasidan foydalaniladi.
+ Agar raqamning qiymati manfiy bo'lsa, Math.sqrt() NaN ni qaytaradi.
+```;
