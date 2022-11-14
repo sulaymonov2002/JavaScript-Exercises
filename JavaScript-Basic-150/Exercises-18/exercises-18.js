@@ -6,3 +6,4 @@ console.log(test(50, 50));
 console.log(test(20, 50));
 console.log(test(20, 20));
 console.log(test(20, 30));
+ 
