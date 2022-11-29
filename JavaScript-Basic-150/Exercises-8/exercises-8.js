@@ -4,7 +4,7 @@ console.log(num);
 
 const text = prompt("1 dan 10 gacha bo'lgan sonni taxmin kiriting: ");
 if (text == num) {
-    console.log('Matched');
+    console.log("Matched 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉");
 } else {
     console.log('Not matched, the number was ' + text)
 }

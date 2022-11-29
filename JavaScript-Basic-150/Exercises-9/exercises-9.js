@@ -10,3 +10,4 @@ console.log(
     (cams.getTime() - today.getTime()) / oneDay
   )} kun qoldi ! `
 );
+

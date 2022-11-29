@@ -24,3 +24,4 @@ function animate_string(id) {
  * element.childNodes[0] birinchi tugunning
  * HTML mazmuni bilan bir xil natija beradi.
  */
+
