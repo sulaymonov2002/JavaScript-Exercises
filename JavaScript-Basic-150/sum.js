@@ -1,11 +1,12 @@
-function sum(a, b) {
-  return a + b;
-}
+module.exports.absolute = function (number) {
+  return number >= 0 ? number : -number;
+};
 
-if (0) {
-  console.log("this is truthy");
-} else {
-  console.log("this is falsy");
-}
+module.exports.salom = function (name) {
+  return "Assalomu alekum, " + name;
+};
 
-module.exports = sum;
+// Qatorlarni test qilish
+module.exports.getCurrencies = function () {
+  return ["UZS", "MYR", "TRY"];
+};
