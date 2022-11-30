@@ -21,6 +21,56 @@ describe("salom", () => {
   it("should return the greeting message", () => {
     const result = sum.salom("Rahmonqul");
     //   expect(result).toContain("Farhod");
-      expect(result).toMatch(/Rahmonqul/)
+    expect(result).toMatch(/Rahmonqul/);
+  });
+});
+
+describe("getCurrencies", () => {
+  it("should return default currencies", () => {
+    const result = sum.getCurrencies();
+
+    // o'ta umumiy test
+    expect(result).toBeDefined();
+    expect(result).not.toBeNull();
+
+    //o'ta anniq test
+    expect(result[0]).toBe("UZS");
+    expect(result[1]).toBe("MYR");
+    expect(result[2]).toBe("TRY");
+    expect(result.length).toBe(3);
+
+    // tog'ri uslubda yozilgan test
+    expect(result).toContain("UZS");
+    expect(result).toContain("TRY");
+    expect(result).toContain("MYR");
+    expect(result).toEqual(expect.arrayContaining(["UZS", "MYR", "TRY"]));
+  });
+});
+
+describe("getProduct", () => {
+  it("should return the product with the given id", () => {
+    const result = sum.getProduct(11);
+    expect(result).toEqual({ id: 11, title: "banana", price: 2 });
+
+    expect(result).toMatchObject({ id: 11, price: 2 });
+    expect(result).toHaveProperty("price", 2);
+  });
+});
+
+describe("registerUser", () => {
+  it("should throw error if userName is falsy", () => {
+    // null, undefined, Nan, "", 0 va false
+    const falsyItems = [null, undefined, NaN, "", 0, false];
+    falsyItems.forEach((fi) => {
+      expect(() => {
+        sum.registeruser(fi);
+      }).toThrow();
+    });
+  });
+
+  it("should return a user object if valid username is passed", () => {
+    const user = sum.registeruser("admin");
+    expect(user).toMatchObject({ userName: "admin" });
+    expect(user.id).toBeGreaterThan(0);
   });
 });
