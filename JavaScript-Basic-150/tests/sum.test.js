@@ -1,3 +1,4 @@
+const db = require("../db");
 const sum = require("../sum");
 
 describe("absolute", () => {
@@ -73,4 +74,28 @@ describe("registerUser", () => {
     expect(user).toMatchObject({ userName: "admin" });
     expect(user.id).toBeGreaterThan(0);
   });
+});
+
+describe("applyDiscount", () => {
+  it("should apply 10% discount if customer has more than 100 points", () => {
+    db.getCustomer = function (customerId) {
+      console.log("Mijozni olishni mock qildik");
+      return { id: customerId, points: 101 };
+    };
+
+    const order = { customerId: 7, price: 100, totalPrice: 100 };
+    sum.applyDiscount(order);
+    expect(order.totalPrice).toBe(90);
+  });
+    
+     it("should not apply 10% discount if customer has less than 100 points", () => {
+       db.getCustomer = function (customerId) {
+         console.log("Mijozni olishni mock qildik");
+         return { id: customerId, points: 55 };
+       };
+
+       const order = { customerId: 7, price: 100, totalPrice: 100 };
+       sum.applyDiscount(order);
+       expect(order.totalPrice).toBe(100);
+     });
 });
